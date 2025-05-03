@@ -142,7 +142,7 @@ export default function MainContent() {
                         >
                             {/* If you want to show your pics then you can save your pics in public/images folder like this 1.jpg, 2.jpg, 3.jpg then replace the src to this - /images/${i}.jpg */}
                             <Image
-                                src={`/images/${i}.jpg`}
+                                src={`/public/images/${i}.jpg`}
                                 alt={`Gallery image ${i}`}
                                 width={330}
                                 height={270}
@@ -255,7 +255,7 @@ export default function MainContent() {
                     >
                         {/* When showing your own pics replace image src with this - /images/${selectedImage}.jpg */}
                         <Image
-                            src={`/images/${selectedImage}.jpg`}
+                            src={`/public/images/${selectedImage}.jpg`}
                             alt={`Gallery image ${selectedImage}`}
                             width={300}
                             height={250}
