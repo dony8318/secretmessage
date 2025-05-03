@@ -38,7 +38,7 @@ export default function MainContent() {
                     Our Special Story
                 </h1>
                 <div className="text-2xl md:text-3xl text-purple-700 mb-8 relative z-10">
-                    Hey Cutiepie, you are<br />my<FlipWords words={['sunshine', 'soulmate', 'everything', 'love', 'world']} className="text-nowrap" />
+                    Hey Cutiepie, you are<br />my<FlipWords words={['sunshine', 'bestie', 'everything', 'love', 'world']} className="text-nowrap" />
                 </div>
                 <motion.button
                     whileHover={{ scale: 1.05 }}
@@ -56,12 +56,12 @@ export default function MainContent() {
             <h2 className="text-3xl font-bold text-blue-600 mb-6 relative z-10">Our Journey</h2>
             <div className="space-y-4 flex-1 overflow-y-auto overflow-x-hidden rounded-xl custom-scrollbar">
                 {[
-                    { date: '14 February, 2022', event: 'Our Journey Began', emoji: '❤️' },
-                    { date: '1 March, 2022', event: 'First Movie Together', emoji: '🎬' },
-                    { date: '1 March, 2022', event: 'First Hug', emoji: '🤗' },
-                    { date: '5 May, 2022', event: 'First Trip Together', emoji: '✈️' },
-                    { date: '10 August, 2022', event: 'First Fight & Patch-up', emoji: '💬' },
-                    { date: '25 December, 2022', event: 'First Christmas Together', emoji: '🎄' },
+                    { date: '29 December, 2023', event: 'Our Journey Began', emoji: '❤️' },
+                    { date: '3 March, 2024', event: 'First Movie Together', emoji: '🎬' },
+                    { date: '4 October, 2024', event: 'First Hug', emoji: '🤗' },
+                    { date: '27 December, 2024', event: 'First Trip Together', emoji: '🚗' },
+                    { date: '17 August, 2024', event: 'First Fight & Patch-up', emoji: '💬' },
+                    { date: '25 December, 2024', event: 'First Christmas Together', emoji: '🎄' },
                 ]
                     .map((item, index) => (
                         <motion.div
@@ -92,8 +92,8 @@ export default function MainContent() {
                         transition={{ duration: 0.5, delay: 0.2 }}
                     >
                         <TimeCounter
-                            startDate="2019-10-23"
-                            label="As Friends"
+                            startDate="2023-11-27"
+                            label="First conversation🥹"
                         />
                     </motion.div>
                     <motion.div
@@ -102,8 +102,8 @@ export default function MainContent() {
                         transition={{ duration: 0.5, delay: 0.4 }}
                     >
                         <TimeCounter
-                            startDate="2022-01-14"
-                            label="As a Couple"
+                            startDate="2023-12-29"
+                            label="Strong Together From🫂🥰"
                         />
                     </motion.div>
                 </div>
@@ -142,7 +142,7 @@ export default function MainContent() {
                         >
                             {/* If you want to show your pics then you can save your pics in public/images folder like this 1.jpg, 2.jpg, 3.jpg then replace the src to this - /images/${i}.jpg */}
                             <Image
-                                src={`https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                                src={`/images/${i}.jpg`}
                                 alt={`Gallery image ${i}`}
                                 width={330}
                                 height={270}
@@ -160,11 +160,11 @@ export default function MainContent() {
             <div className="bg-white rounded-xl p-6 shadow-md overflow-y-auto flex-1 custom-scrollbar">
                 <div className="relative z-10">
                     <div className="text-gray-700 text-lg leading-relaxed mb-4">
-                        <p>From the very first moment our paths crossed, life has felt more beautiful, more exciting, and more meaningful. Every smile, every conversation, and every memory we've shared has built a story so precious that no words can truly capture it. I feel incredibly grateful to have someone like you by my side, someone who understands me without even saying a word, someone who brings light even on the darkest days. Through ups and downs, laughter and tears, you've been a constant source of strength and happiness. As we continue to write our journey together, I want you to always remember that you are deeply cherished, endlessly appreciated, and truly loved. Here's to the countless memories we've yet to create and the beautiful future that awaits us. You are, and always will be, my favorite part of every day.💖</p>
+                        <p>Bujjuuuma😻😻I know I get angry sometimes and act in ways that hurt you😢….But still you stay with me caring for me and adjusting so much just to make things work I don’t always say it but I see your love and patience every day…..Even when I get mad at you but still uk my love for you is always there just like your dad how he love for you or maybe even more I really love you a lot🫠♥️Bujju. You’re like everything to me only one who can control my mood tbh 🤗 Thank you for staying with me 🫣🫶🏻</p>
                     </div>
                     <p className="text-right text-rose-600 font-semibold">
                         Forever yours,<br />
-                        Your love❤️
+                        Your Blisuuuu❤️
                     </p>
                 </div>
             </div>
@@ -255,7 +255,7 @@ export default function MainContent() {
                     >
                         {/* When showing your own pics replace image src with this - /images/${selectedImage}.jpg */}
                         <Image
-                            src={`https://images.pexels.com/photos/1759823/pexels-photo-1759823.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
+                            src={`/images/${selectedImage}.jpg`}
                             alt={`Gallery image ${selectedImage}`}
                             width={300}
                             height={250}
